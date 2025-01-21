@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './login/Login'
 
