@@ -9,10 +9,12 @@ import {
   MDBInput,
   MDBIcon
 } from 'mdb-react-ui-kit';
+import { useNavigate } from 'react-router-dom'; // Importamos useNavigate
 
 function Login() {
   const [email, setEmail] = useState('iam@organization.com');
   const [password, setPassword] = useState('defaultpassword');
+  const navigate = useNavigate(); // Creamos una instancia del hook useNavigate
 
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
@@ -21,6 +23,7 @@ function Login() {
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
     console.log('User credentials saved to localStorage');
+    navigate('/home'); // Navegamos a la ruta "/home"
   };
 
   return (
