@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import itemsData from '../json-files/employee-entry-process.json';
 import {
   MDBBtn,
   MDBContainer,
@@ -9,13 +10,13 @@ import {
   MDBInput
 }
 from 'mdb-react-ui-kit';
- import Process from './Process'; 
+import Process from '../utility/Process';
 
 const EmployeeEntry= () => {
-  const [onCreate, setOnCreate] = useState(false);
+  const [indicator, setIndicator] = useState(false);
 
   const handleCreateClick = () => {
-    setOnCreate(true);
+    setIndicator(true);
   };
 
   return (
@@ -50,6 +51,37 @@ const EmployeeEntry= () => {
               <MDBInput
                 wrapperClass='mb-4 mx-5 w-100'
                 labelClass='text-white'
+                label='Coutry'
+                id='formControlLg'
+                type='text'
+                size="lg"
+                defaultValue="Argentina"
+                style={{ color: 'white' }}
+              />
+
+              <MDBInput
+                wrapperClass='mb-4 mx-5 w-100'
+                labelClass='text-white'
+                label='City'
+                id='formControlLg'
+                type='text'
+                size="lg"
+                defaultValue="Capital Federal"
+                style={{ color: 'white' }}
+              />
+              <MDBInput
+                wrapperClass='mb-4 mx-5 w-100'
+                labelClass='text-white'
+                label='Office'
+                id='formControlLg'
+                type='text'
+                size="lg"
+                defaultValue="Belgrano"
+                style={{ color: 'white' }}
+              />
+              <MDBInput
+                wrapperClass='mb-4 mx-5 w-100'
+                labelClass='text-white'
                 label='Position'
                 id='formControlLg'
                 type='text'
@@ -78,6 +110,27 @@ const EmployeeEntry= () => {
                 defaultValue="Automation of repetitive processes"
                 style={{ color: 'white' }}
               />
+
+              <MDBInput
+                wrapperClass='mb-4 mx-5 w-100'
+                labelClass='text-white'
+                label='Email'
+                id='formControlLg'
+                type='text'
+                size="lg"
+                defaultValue="jhonny.berdeja@iam.com"
+                style={{ color: 'white' }}
+              />
+              <MDBInput
+                wrapperClass='mb-4 mx-5 w-100'
+                labelClass='text-white'
+                label='Red'
+                id='formControlLg'
+                type='text'
+                size="lg"
+                defaultValue="jhonny.berdeja@infrastructure.ar.caba"
+                style={{ color: 'white' }}
+              />
               <MDBBtn
                 outline
                 className='mx-2 px-5'
@@ -85,7 +138,7 @@ const EmployeeEntry= () => {
                 size='lg'
                 onClick={handleCreateClick}
               >
-                Create
+                Crear
               </MDBBtn>
 
             </MDBCardBody>
@@ -95,7 +148,7 @@ const EmployeeEntry= () => {
         <MDBCol col='12' start>
    
              <div class="card my-5 mx-auto">
-                <Process onCreate={onCreate} />
+                <Process itemsData={itemsData} indicateStartProcess={indicator} />
             </div> 
          
         </MDBCol>

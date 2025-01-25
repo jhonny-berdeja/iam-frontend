@@ -1,0 +1,256 @@
+[
+  {
+    "title": "Inicio de proceso",
+    "content": "Inicio del proceso."
+  },
+  {
+    "title": "Validación de datos",
+    "content": "Los datos proporcionados son válidos."
+  },
+  {
+    "title": "Conexión con el sistema de gestión de correos",
+    "content": "La conexión se ha establecido correctamente."
+  },
+  {
+    "title": "Política para definir nombre de usuario de correo",
+    "content": "El nombre de usuario de correo se ha definido correctamente."
+  },
+  {
+    "title": "Política para definir contraseña de correo",
+    "content": "La contraseña de correo se ha definido correctamente."
+  },
+  {
+    "title": "Solicitud de creación de correo al sistema de gestión de correos",
+    "content": "El correo se ha creado correctamente."
+  },
+  {
+    "title": "Política para definir configuración de correo",
+    "content": "La configuración de correo se ha definido correctamente."
+  },
+  {
+    "title": "Solicitud de configuración de correo",
+    "content": "El correo se ha configurado correctamente."
+  },
+  {
+    "title": "Política para definir grupos de correos para incluir el correo",
+    "content": "Los grupos se han definido correctamente."
+  },
+  {
+    "title": "Solicitud de adición de correo a grupos definidos",
+    "content": "El correo se ha agregado correctamente a los grupos."
+  },
+  {
+    "title": "Conexión con el sistema de gestión de red",
+    "content": "La conexión se ha establecido correctamente."
+  },
+  {
+    "title": "Política para definir nombre de usuario de red",
+    "content": "El nombre de usuario de red se ha definido correctamente."
+  },
+  {
+    "title": "Política para definir contraseña de usuario de red",
+    "content": "La contraseña de usuario de red se ha definido correctamente."
+  },
+  {
+    "title": "Solicitud de creación de usuario de red al sistema de gestión de red",
+    "content": "El usuario de red se ha creado correctamente."
+  },
+  {
+    "title": "Política para definir configuración de usuario de red",
+    "content": "La configuración del usuario de red se ha definido correctamente."
+  },
+  {
+    "title": "Solicitud de configuración de usuario de red",
+    "content": "El usuario de red se ha configurado correctamente."
+  },
+  {
+    "title": "Política para definir grupos de red para incluir al usuario de red",
+    "content": "Los grupos de red se han definido correctamente."
+  },
+  {
+    "title": "Solicitud de adición de usuario de red a grupos definidos",
+    "content": "El usuario de red se ha agregado correctamente a los grupos."
+  },
+  {
+    "title": "Creación de identidad digital",
+    "content": "La identidad digital se ha creado correctamente."
+  },
+  {
+    "title": "Añadir UID a identidad digital",
+    "content": "El UID se ha añadido correctamente a la identidad digital."
+  },
+  {
+    "title": "Conexión con el sistema de gestión de VPN",
+    "content": "La conexión con el sistema de gestión de VPN se ha establecido correctamente."
+  },
+  {
+    "title": "Política para definir usuario de VPN",
+    "content": "El usuario de VPN se ha definido correctamente."
+  },
+  {
+    "title": "Política para definir contraseña de usuario de VPN",
+    "content": "La contraseña de usuario de VPN se ha definido correctamente."
+  },
+  {
+    "title": "Solicitud de creación de usuario de VPN",
+    "content": "El usuario de VPN se ha creado correctamente."
+  },
+  {
+    "title": "Definición de política de configuración de usuario de VPN",
+    "content": "La política de configuración de usuario de VPN se ha definido correctamente."
+  },
+  {
+    "title": "Solicitud de configuración de usuario de VPN",
+    "content": "El usuario de VPN se ha configurado correctamente."
+  },
+  {
+    "title": "Conexión con el sistema de gestión de accesos a recursos",
+    "content": "La conexión con el sistema de gestión de accesos a recursos se ha establecido correctamente."
+  },
+  {
+    "title": "Política para definir accesos a recursos para el colaborador",
+    "content": "Los accesos a los recursos [Groups, Jira, Salesforce, Odoo, Github, Jenkins, Trello, Asana, Terraform, Ansible, Confluence] se han definido correctamente."
+  },
+  {
+    "title": "Política para definir roles, permisos y contextos de accesos a recursos para el colaborador",
+    "content": [
+      {
+        "title": "Colaborador Developer",
+        "content": "Roles, permisos y contextos de accesos definidos correctamente."
+      },
+      {
+        "title": "Groups",
+        "content": "Groups [Rol: DEVELOPER] [Permisos: VIEW_GROUPS, JOIN_GROUPS, SEND_GROUP_MESSAGES] [Contexto: DEV_GROUPS_ONLY]"
+      },
+      {
+        "title": "Jira",
+        "content": "Jira [Rol: DEVELOPER] [Permisos: CREATE_TASKS, ASSIGN_TASKS, UPDATE_TASKS, VIEW_TASKS] [Contexto: DEV_PROJECTS]"
+      },
+      {
+        "title": "Salesforce",
+        "content": "Salesforce [Rol: DEVELOPER] [Permisos: ACCESS_API, INTEGRATE_DATA] [Contexto: DEV_ONLY]"
+      },
+      {
+        "title": "Odoo",
+        "content": "Odoo [Rol: DEVELOPER] [Permisos: CREATE_MODULES, MODIFY_MODULES, ACCESS_DEV_TOOLS] [Contexto: DEVELOPMENT_ENVIRONMENT]"
+      },
+      {
+        "title": "Github",
+        "content": "Github [Rol: DEVELOPER] [Permisos: CLONE_REPOS, CREATE_BRANCHES, PUSH_CHANGES, CREATE_PULL_REQUESTS] [Contexto: DEV_PROJECTS, PUBLIC_REPOS]"
+      },
+      {
+        "title": "Jenkins",
+        "content": "Jenkins [Rol: DEVELOPER] [Permisos: RUN_BUILDS, VIEW_LOGS, EXECUTE_DEPLOYMENTS] [Contexto: DEV_ENVIRONMENTS]"
+      },
+      {
+        "title": "Trello",
+        "content": "Trello [Rol: DEVELOPER] [Permisos: CREATE_CARDS, MOVE_CARDS, UPDATE_CARDS] [Contexto: DEV_PROJECTS]"
+      },
+      {
+        "title": "Asana",
+        "content": "Asana [Rol: DEVELOPER] [Permisos: CREATE_TASKS, ASSIGN_TASKS, UPDATE_TASKS] [Contexto: DEV_TEAM_PROJECTS]"
+      },
+      {
+        "title": "Terraform",
+        "content": "Terraform [Rol: DEVELOPER] [Permisos: VIEW_INFRASTRUCTURE, EXECUTE_TF_PLAN] [Contexto: DEV_INFRASTRUCTURE_ONLY]"
+      },
+      {
+        "title": "Ansible",
+        "content": "Ansible [Rol: DEVELOPER] [Permisos: EXECUTE_PLAYBOOKS, VIEW_PLAYBOOKS] [Contexto: DEV_ENVIRONMENTS]"
+      },
+      {
+        "title": "Confluence",
+        "content": "Confluence [Rol: DEVELOPER] [Permisos: CREATE_PAGES, EDIT_PAGES, VIEW_DOCUMENTATION] [Contexto: DEV_TEAM_DOCUMENTATION]"
+      }
+    ]
+  },
+  {
+    "title": "Solicitud de provisión de accesos con roles, permisos y contextos definidos para colaborador Developer",
+    "content": [
+      {
+        "title": "Colaborador Developer",
+        "content": "Los accesos con roles, permisos y contextos han sido provisiónados correctamente por el sistema de gestión de accesos a recursos."
+      },
+      {
+        "title": "Groups",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Jira",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Salesforce",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Odoo",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Github",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Jenkins",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Trello",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Asana",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Terraform",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Ansible",
+        "content": "Provisión realizado correctamente."
+      },
+      {
+        "title": "Confluence",
+        "content": "Provisión realizado correctamente."
+      }
+    ]
+  },
+  {
+    "title": "Añadir accesos con roles, permisos y contextos a identidad digital del colaborador",
+    "content": "Los accesos con roles, permisos y contextos han sido añadidos a la identidad digital correctamente."
+  },
+  {
+    "title": "Enviar capacitaciones al email del colaborador",
+    "content": "El envío de capacitaciones sobre los sistemas que utilizará y seguridad informática al email del colaborador se ha completado correctamente."
+  },
+  {
+    "title": "Validación de identidad digital del colaborador",
+    "content": "La identidad digital del colaborador se ha creado correctamente."
+  },
+  {
+    "title": "Validación de los accesos del colaborador",
+    "content": "Los accesos a los diferentes sistemas se han creado correctamente."
+  },
+  {
+    "title": "Política para definir la configuración de la computadora que se entregará al colaborador",
+    "content": "Se ha solicitado una computadora con sistema operativo Linux, configuraciones para developer e instalación de aplicaciones correctamente."
+  },
+  {
+    "title": "Solicitar computadora para colaborador con configuración definida",
+    "content": "Se ha solicitado una computadora con la configuración definida correctamente."
+  },
+  {
+    "title": "Desactivar accesos para colaborador",
+    "content": "Se han desactivado todos los accesos correctamente."
+  },
+  {
+    "title": "Programar fecha de activación de accesos",
+    "content": "Se ha programado la activación de accesos para el día de ingreso del colaborador."
+  },
+  {
+    "title": "PROCESO AUTOMÁTICO FINALIZADO",
+    "content": "El proceso ha finalizado correctamente."
+  }
+]

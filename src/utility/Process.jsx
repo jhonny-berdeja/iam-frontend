@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { MDBAccordion, MDBAccordionItem, MDBSpinner } from 'mdb-react-ui-kit';
-import itemsData from './identity-creation-process.json'; 
 
-export default function Process({ onCreate }) {
+export default function Process({ itemsData, indicateStartProcess }) {
   const [items, setItems] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(3);
+  const [visibleCount, setVisibleCount] = useState(0);
   const [isContinuing, setIsContinuing] = useState(false);
   const [greenItems, setGreenItems] = useState(new Set());
   const [spinners, setSpinners] = useState(new Set());
 
   useEffect(() => {
-    setItems(itemsData);
-  }, []);
+    if (itemsData) {
+      setItems(itemsData);
+    }
+  }, [itemsData]);
 
   useEffect(() => {
-    if (onCreate) {
+    if (indicateStartProcess) {
       handleCreate();
     }
-  }, [onCreate]);
+  }, [indicateStartProcess]);
 
   useEffect(() => {
     if (isContinuing && visibleCount < items.length) {
@@ -67,28 +68,14 @@ export default function Process({ onCreate }) {
   return (
     <div>
       <MDBAccordion borderless initialActive={1}>
-        {items.slice(0, 3).map((item, index) => (
+
+        {visibleCount <= 1 && items.slice(0, 1).map((item, index) => (
           <MDBAccordionItem 
             key={index}
             collapseId={index + 1}
             headerTitle={
               <div className="d-flex justify-content-between align-items-center">
-                <span>{index + 1} - {item.title}</span>
-              </div>
-            }
-            className='text-white bg-success'
-          >
-            {renderContent(item.content)}
-          </MDBAccordionItem>
-        ))}
-
-        {visibleCount <= 4 && items.slice(3, 4).map((item, index) => (
-          <MDBAccordionItem 
-            key={index + 3}
-            collapseId={index + 4}
-            headerTitle={
-              <div className="d-flex justify-content-between align-items-center">
-                <span>{index + 4} - {item.title}</span>  
+                <span>{index + 1} - {item.title}</span>  
               </div>
             }
             className='text-white bg-dark'
@@ -97,18 +84,18 @@ export default function Process({ onCreate }) {
           </MDBAccordionItem>
         ))}
 
-        {visibleCount > 4 &&
-          items.slice(3, visibleCount).map((item, index) => (
+        {visibleCount > 1 &&
+          items.slice(0, visibleCount).map((item, index) => (
             <MDBAccordionItem 
-              key={index + 3}
-              collapseId={index + 5}
+              key={index}
+              collapseId={index + 1}
               headerTitle={
                 <div className="d-flex justify-content-between align-items-center">
-                  <span>{index + 4} - {item.title}</span>
-                  {spinners.has(index + 4) && <MDBSpinner color='light' style={{ marginLeft: '10px' }} />}
+                  <span>{index + 1} - {item.title}</span>
+                  {spinners.has(index + 1) && <MDBSpinner color='light' style={{ marginLeft: '10px' }} />}
                 </div>
               }
-              className={greenItems.has(index + 4) ? 'text-white bg-success' : 'text-white bg-dark'}
+              className={greenItems.has(index + 1) ? 'text-white bg-success' : 'text-white bg-dark'}
             >
               {renderContent(item.content)}
             </MDBAccordionItem>

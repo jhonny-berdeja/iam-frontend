@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Inicio de proceso",
+    "content": "Inicio del proceso."
+  },
+  {
+    "title": "Obtener identidad digital del colaborador",
+    "content": "Obtenida correctamente."
+  },
+  {
+    "title": "Obtener la información de accesos de la identidad digital",
+    "content": "Obtenida correctamente."
+  },
+  {
+    "title": "Conexión con el sistema de gestión de accesos de las aplicaciones a las que tiene acceso el colaborador",
+    "content": "Conexión exitosa."
+  },
+  {
+    "title": "Solicitar la eliminación de acceso al sistema de gestión de accesos de cada una de las aplicaciones",
+    "content": "Eliminado correctamente."
+  },
+  {
+    "title": "Quitar accesos de identidad digital",
+    "content": "Se han quitado correctamente."
+  },
+  {
+    "title": "PROCESO AUTOMÁTICO FINALIZADO",
+    "content": "El proceso ha finalizado correctamente."
+  }
+]
