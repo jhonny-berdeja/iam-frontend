@@ -1,0 +1,203 @@
+[
+    {
+      "title": "Reclutamiento",
+      "content": "El proceso de selección del colaborador finalizó correctamente."
+    },
+    {
+      "title": "Contratación",
+      "content": "El proceso de contratación del colaborador finalizó correctamente."
+    },
+    {
+      "title": "Recepción de datos de colaborador emitidos por selección de personal",
+      "content": "El serctor de selección de personal proporsionó los datos del colaborador correctamente"
+    },
+    {
+      "title": "Carga de datos del colaborador en sistema IAM",
+      "content": "Carga de datos del colaborador en sistema IAM"
+    },
+    {
+      "title": "Creación de identidad digital",
+      "content": "Creado correctamente."
+    },
+    {
+      "title": "Añadil UID a identidad digital",
+      "content": "Se añadió UID=a9d8f9a8d7f9a87sf98a7fa098sd7fa908 correctamente."
+    },
+    {
+      "title": "Denición de nombre de usuario de accesos",
+      "content": "Username=jhonny.berdeja.100 definido correctamente."
+    },
+    {
+      "title": "Denición de password de accesos",
+      "content": "Password=********** definido correctamente."
+    },
+    {
+      "title": "Denición de accesos para el colaborador",
+      "content": "Se definieron los accesos=[Email,Red, VPN, Groups, Jira, Salesforce, Odoo, Github, Jenkins, Trello, Asana, Terraform, Ansible, Confluence] correctamente."
+    },
+    {
+      "title": "Denición de roles, permisos y contextos de accesos para el colaborador developer",
+      "content": 
+      [
+        {
+          "title": "Colaborador Developer",
+          "content": "Roles, permisos y contextos de accesos definidos correctamente."
+        },
+        {
+          "title": "Email",
+          "content": "Gmail [Role: DEVELOPER] [Permisos: READ_EMAIL, SEND_EMAIL, ARCHIVE_EMAIL] [Contexto: FROM_AR, FROM_9AM_TO_6PM]"
+        },
+        {
+          "title": "Red",
+          "content": "Red [Role: DEVELOPER] [Permisos: ACCESS_DEV_NETWORK, ACCESS_TESTING_SERVERS] [Contexto: DEV_ONLY, TEST_ENVIRONMENTS]"
+        },
+        {
+          "title": "VPN",
+          "content": "VPN [Role: DEVELOPER] [Permisos: CONNECT_VPN, ACCESS_DEV_SERVERS, ACCESS_TEST_SERVERS] [Contexto: REMOTE_ACCESS, DEV_TEST_ONLY]"
+        },
+        {
+          "title": "Groups",
+          "content": "Groups [Role: DEVELOPER] [Permisos: VIEW_GROUPS, JOIN_GROUPS, SEND_GROUP_MESSAGES] [Contexto: DEV_GROUPS_ONLY]"
+        },
+        {
+          "title": "Jira",
+          "content": "Jira [Role: DEVELOPER] [Permisos: CREATE_TASKS, ASSIGN_TASKS, UPDATE_TASKS, VIEW_TASKS] [Contexto: DEV_PROJECTS]"
+        },
+        {
+          "title": "Salesforce",
+          "content": "Salesforce [Role: DEVELOPER] [Permisos: ACCESS_API, INTEGRATE_DATA] [Contexto: DEV_ONLY]"
+        },
+        {
+          "title": "Odoo",
+          "content": "Odoo [Role: DEVELOPER] [Permisos: CREATE_MODULES, MODIFY_MODULES, ACCESS_DEV_TOOLS] [Contexto: DEVELOPMENT_ENVIRONMENT]"
+        },
+        {
+          "title": "Github",
+          "content": "Github [Role: DEVELOPER] [Permisos: CLONE_REPOS, CREATE_BRANCHES, PUSH_CHANGES, CREATE_PULL_REQUESTS] [Contexto: DEV_PROJECTS, PUBLIC_REPOS]"
+        },
+        {
+          "title": "Jenkins",
+          "content": "Jenkins [Role: DEVELOPER] [Permisos: RUN_BUILDS, VIEW_LOGS, EXECUTE_DEPLOYMENTS] [Contexto: DEV_ENVIRONMENTS]"
+        },
+        {
+          "title": "Trello",
+          "content": "Trello [Role: DEVELOPER] [Permisos: CREATE_CARDS, MOVE_CARDS, UPDATE_CARDS] [Contexto: DEV_PROJECTS]"
+        },
+        {
+          "title": "Asana",
+          "content": "Asana [Role: DEVELOPER] [Permisos: CREATE_TASKS, ASSIGN_TASKS, UPDATE_TASKS] [Contexto: DEV_TEAM_PROJECTS]"
+        },
+        {
+          "title": "Terraform",
+          "content": "Terraform [Role: DEVELOPER] [Permisos: VIEW_INFRASTRUCTURE, EXECUTE_TF_PLAN] [Contexto: DEV_INFRASTRUCTURE_ONLY]"
+        },
+        {
+          "title": "Ansible",
+          "content": "Ansible [Role: DEVELOPER] [Permisos: EXECUTE_PLAYBOOKS, VIEW_PLAYBOOKS] [Contexto: DEV_ENVIRONMENTS]"
+        },
+        {
+          "title": "Confluence",
+          "content": "Confluence [Role: DEVELOPER] [Permisos: CREATE_PAGES, EDIT_PAGES, VIEW_DOCUMENTATION] [Contexto: DEV_TEAM_DOCUMENTATION]"
+        }
+      ]
+    },
+    {
+      "title": "Provicionamiento de accesos con roles, permisos y contextos definidos para colaborador developer",
+      "content": 
+      [
+        {
+          "title": "Colaborador Developer",
+          "content": "Accesos con roles, permisos y contextos provicionados correctamente."
+        },
+        {
+          "title": "Email",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Red",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "VPN",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Groups",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Jira",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Salesforce",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Odoo",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Github",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Jenkins",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Trello",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Asana",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Terraform",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Ansible",
+          "content": "Provicionado correctamente"
+        },
+        {
+          "title": "Confluence",
+          "content": "Provicionado correctamente"
+        }
+      ]
+    },
+    {
+      "title": "Añadir accesos con roles, permisos y contextos a identidad digital del colaborador",
+      "content": "Los accesos con roles, permisos y contextos se añadieron a la identidad digital correctamente."
+    },
+    {
+      "title": "Enviar capacitaciones a email del colaborador",
+      "content": "Envío de capacitaciones sobre el usuario de los sistemas que utilizará y seguridad informatica al email del colaborador finalizado correctamente."
+    },
+    {
+      "title": "Validación de identidad digital del colaborador",
+      "content": "La identidad digital del colaborador esta creada correctamente."
+    },
+    {
+      "title": "Validar los accesos del colaborador",
+      "content": "Los accesos a las diferentes sistemas se an creado correctamente."
+    },
+    {
+      "title": "Solicitar computadora para colaborador",
+      "content": "Se solicito una computadora con sistema operativo linux, configuraciones para developer e instalación de aplicaciones correctamente."
+    },
+    {
+      "title": "Desactivar accesos para colaborador",
+      "content": "Se desactivaron todos los accesos correctamente."
+    },
+    {
+      "title": "Programar fecha de activación de accesos",
+      "content": "Se programó la activación de accesos para el dia que ingresa el colaborador."
+    },
+    {
+      "title": "PROCESO AUTOMÁTICO FINALIZADO",
+      "content": "EL PROCESO HA FINALIZADO CORRECTAMENTE."
+    }
+  ]
+  
