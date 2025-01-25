@@ -5,7 +5,6 @@ import {
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBCollapse
 } from 'mdb-react-ui-kit';
 import HomeGrid from './HomeGrid';
 import IAMIcon from '../utility/IAMicon';
@@ -24,57 +23,49 @@ export default function Home() {
       case 'employee-entry':
         return <EmployeeEntry />;
       case 'exit-of-employee':
-        return <ExitOfEmployee/>
+        return <ExitOfEmployee />;
       case 'access-management':
-        return <AccessManagement/>
+        return <AccessManagement />;
       case 'view-identities':
-        return <ViewIdentities/>
+        return <ViewIdentities />;
       default:
         return null; // Si no hay un componente activo, no mostramos nada
     }
   };
 
-
   return (
     <>
-      <MDBNavbar expand='lg' dark bgColor='dark'>
-        <MDBContainer fluid>
-          <IAMIcon/>
-          <MDBCollapse navbar id='navbarColor02'>
-            <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
-              <MDBNavbarItem className='active'
-                onClick={() => setActiveComponent('employee-entry')}
-              >
-                <MDBNavbarLink aria-current='page'>
-                  Ingreso de empleado
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem className='active'
-                onClick={() => setActiveComponent('exit-of-employee')}
-              >
-                <MDBNavbarLink aria-current='page'>
-                  Baja de empleado
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem className='active'
-                onClick={() => setActiveComponent('access-management')}
-              >
-                <MDBNavbarLink>
-                  Gestión de accesos
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem className='active'
-                onClick={() => setActiveComponent('view-identities')}
-              >
-                <MDBNavbarLink>
-                  Visualizar identidades
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-          <LogOutIcon/>
+      <MDBNavbar expand="lg" dark bgColor="dark">
+        <MDBContainer fluid className="d-flex justify-content-between align-items-center">
+          {/* Icono del sistema */}
+          <div className="d-flex align-items-center">
+            <IAMIcon />
+          </div>
+
+          {/* Items del menú */}
+          <MDBNavbarNav className="d-flex align-items-center">
+            <MDBNavbarItem className="mx-2" onClick={() => setActiveComponent('employee-entry')}>
+              <MDBNavbarLink aria-current="page">Ingreso de empleado</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem className="mx-2" onClick={() => setActiveComponent('exit-of-employee')}>
+              <MDBNavbarLink>Baja de empleado</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem className="mx-2" onClick={() => setActiveComponent('access-management')}>
+              <MDBNavbarLink>Gestión de accesos</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem className="mx-2" onClick={() => setActiveComponent('view-identities')}>
+              <MDBNavbarLink>Visualizar identidades</MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+
+          {/* Icono de cierre de sesión */}
+          <div className="d-flex align-items-center">
+            <LogOutIcon />
+          </div>
         </MDBContainer>
       </MDBNavbar>
+
+      {/* Componente activo */}
       <div>{renderComponent()}</div>
     </>
   );
